@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import React from 'react'
 
 import './App.css'
 
 function App() {
-  <h1>Portfolio</h1>
+  return(
+    <h1>Portfolio</h1>
+  )
 }
 
 export default App

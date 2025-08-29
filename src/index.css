@@ -1,5 +1,10 @@
-
-  :root {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+  
+:root {
   --primary-color: #ffc800; /* Giallo principale */
   --secondary-color: #1a1a1a; /* Nero per sfondo e testo */
   --text-color: #ffffff; /* Bianco per il testo sulle sezioni nere */

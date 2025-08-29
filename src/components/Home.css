@@ -1,0 +1,25 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  width: 80%; /* Puoi regolare la larghezza */
+  max-width: 900px; /* Per evitare che la card diventi troppo grande su schermi ampi */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem; /* Aggiunge spazio interno */
+ 
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  text-align: left;
+}

@@ -14,9 +14,9 @@ export default function Footer(){
                     <a href="https://github.com/[tuo-profilo]" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="social-icon" />
                     </a>
-                    <a href="mailto:[tua-email]">
+                    <Link to="/contact">
                         <FaEnvelope className="social-icon" />
-                    </a>
+                    </Link>
                 </div>
                  <p className="copyright">
                     © 2025 [Daniele Lorenzo Giacomazzi]
@@ -25,3 +25,5 @@ export default function Footer(){
         </footer>
     )
 }
+
+//href="mailto:[tua-email]"

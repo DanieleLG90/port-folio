@@ -1,15 +1,30 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route,NavLink, Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import "./Header.css"
 
 export default function Header(){
+
+    const activeLink = {
+            borderColor: 'var(--secondary-color)',
+            color: 'var(--button-color)',
+            backgroundColor: 'var(--primary-color)'
+    }
+
     return(
         <header>
             <div className='header-body'>
-                <Link className='header-home-link'>DLG</Link>
+                <Link to="/" className='header-home-link'>DLG</Link>
                 <div className='header-links'>
-                    <NavLink>Projects</NavLink>
-                    <NavLink>Contact</NavLink>
+                    <NavLink 
+                        to="/projects"
+                        style={({isActive}) =>(isActive? activeLink : null)}>
+                            Projects
+                    </NavLink>
+                    <NavLink 
+                        to="/contact"
+                        style={({isActive}) =>(isActive? activeLink : null)}>
+                            Contact
+                    </NavLink>
                 </div>
             </div>
         </header>

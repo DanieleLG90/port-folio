@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "./Home.css"
 import photoProfile from "../img/temp-profile-img.png"
 
@@ -15,7 +15,8 @@ export default function Home(){
                         <h2>Hello</h2>
                         <h1>Sono Daniele Lorenzo Giacomazzi</h1>
                         <p>A passionate web developer!</p>
-                        <button class="view-work-button">View My Work</button>
+                        
+                        <Link to="/projects" class="view-work-button">View My Work</Link>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
 import './contact.css';
 
 export default function Contact(){
@@ -28,6 +28,12 @@ export default function Contact(){
                             <FaLinkedin className="contact-icon" />
                             <a href="https://www.linkedin.com/in/[tuo-profilo]" target="_blank" rel="noopener noreferrer">
                                 LinkedIn Profile
+                            </a>
+                        </div>
+                        <div className="contact-item">
+                            <FaGithub className="contact-icon" />
+                            <a href="https://github.com/[tuo-profilo]" target="_blank" rel="noopener noreferrer">
+                                GitHub Profile
                             </a>
                         </div>
                     </div>

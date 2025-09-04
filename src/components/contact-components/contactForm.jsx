@@ -20,11 +20,11 @@ export default function ContactForm(){
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Qui invieremo i dati al servizio esterno
+    
     emailjs.sendForm('service_omi9egq', 'template_p84hk5m', e.target, 'nk4BU4QWx97Z2qeqL')
     .then((result) => {
       console.log('Email sent successfully!', result.text);
-      // Resetta il form dopo l'invio
+      
       setFormData({ name: '', email: '', message: '' });
       alert('Your message has been sent successfully!');
     }, (error) => {

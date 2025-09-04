@@ -8,7 +8,7 @@ export default function Home(){
         <div className='home-container'>
             <div className='card'>
                 <div className='card-body'>
-                    <div class="profile-image">
+                    <div className="profile-image">
                         <img src={photoProfile} alt="Foto del developer" />
                     </div>
                     <div class="intro-text">

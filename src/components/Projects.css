@@ -23,6 +23,16 @@
     width: 24%;
     background-color: var(--secondary-color);
     border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.main-project-card:hover,
+.second-project-card:hover{
+    border: 2px solid var(--button-text-color);
+    transform: scale(1.1);
+    z-index: 1;
+
 }
 
 
@@ -31,4 +41,5 @@
     width: 18%;
     background-color: var(--secondary-color);
     border-radius: 12px;
+    transition: transform 0.3s ease;
 }

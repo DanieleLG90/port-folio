@@ -7,7 +7,7 @@
     gap: 1rem;
     margin: 0;
     padding: 0;
-    background-color: blue;
+    
 }
 
 .main-projects-container,
@@ -22,7 +22,6 @@
     min-height: 400px;
     width: 24%;
     background-color: var(--secondary-color);
-    border: 2px solid white;
     border-radius: 12px;
 }
 
@@ -31,6 +30,5 @@
     min-height: 200px;
     width: 18%;
     background-color: var(--secondary-color);
-    border: 2px solid white;
     border-radius: 12px;
 }

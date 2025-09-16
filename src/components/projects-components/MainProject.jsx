@@ -1,5 +1,5 @@
 import React from "react"
-import { FaHtml5, FaCss3Alt, FaJs, FaGithub, FaLink } from 'react-icons/fa'; // Importa le icone necessarie
+import { FaHtml5, FaCss3Alt, FaJs, FaGithub, FaLink } from 'react-icons/fa'
 import "./MainProject.css"
 import plantJournalImg from "../../img/projects-img/plant-journal.png"
 

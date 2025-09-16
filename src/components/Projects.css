@@ -22,6 +22,7 @@
     min-height: 400px;
     width: 24%;
     background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 12px;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -29,7 +30,8 @@
 
 .main-project-card:hover,
 .second-project-card:hover{
-    border: 2px solid var(--button-text-color);
+    border-color: var(--button-text-color);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
     z-index: 1;
 
@@ -40,6 +42,7 @@
     min-height: 200px;
     width: 18%;
     background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 12px;
     transition: transform 0.3s ease;
 }

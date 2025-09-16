@@ -1,0 +1,85 @@
+.main-project-card{
+     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-project-img-container {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.main-project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.main-project-card:hover .main-project-img-container img {
+    transform: scale(1.1);
+}
+
+.main-project-info-container {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.main-project-info-container h4 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.main-project-link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main-project-link a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.main-project-link a:hover {
+    background-color: #ffd74a;
+}
+
+/* Stile per le sole icone all'interno dei link */
+.main-project-link .link-icon {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+/* Stile del contenitore per le icone dei software */
+.main-project-software {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Stile per le icone dei software */
+.software-icon {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.software-icon:hover {
+    color: var(--primary-color);
+}

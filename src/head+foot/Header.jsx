@@ -2,6 +2,8 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom';
 import "./Header.css"
 
+import Logo from "../img/logo.png"
+
 export default function Header(){
 
     const activeLink = {
@@ -13,7 +15,9 @@ export default function Header(){
     return(
         <header>
             <div className='header-body'>
-                <Link to="/" className='header-home-link'>DLG</Link>
+                <Link to="/" className='header-home-link'>
+                    <img className='logo-img' src={Logo} alt="logo iniziali dlg" />
+                </Link>
                 <div className='header-links'>
                     <NavLink 
                         to="/projects"

@@ -19,6 +19,11 @@
     margin: auto 0;
 }
 
+.logo-img:hover{
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+}
+
 .logo-img{
     width: 3rem;
     margin: 0;

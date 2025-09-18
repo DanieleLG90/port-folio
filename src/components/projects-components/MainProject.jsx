@@ -1,7 +1,16 @@
 import React from "react"
-import { FaHtml5, FaCss3Alt, FaJs, FaGithub, FaLink } from 'react-icons/fa'
 import "./MainProject.css"
 import plantJournalImg from "../../img/projects-img/plant-journal.png"
+
+import { FaHtml5, FaCss3Alt, FaJs, FaReact,FaServer, FaLink, FaGithub } from 'react-icons/fa';
+
+const techIconMap = {
+    react: FaReact,
+    javascript: FaJs,
+    css: FaCss3Alt,
+    html: FaHtml5,
+    api: FaServer
+};
 
 export default function MainProject(){
     return (

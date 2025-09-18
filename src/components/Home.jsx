@@ -11,12 +11,12 @@ export default function Home(){
                     <div className="profile-image">
                         <img src={photoProfile} alt="Foto del developer" />
                     </div>
-                    <div class="intro-text">
+                    <div className="intro-text">
                         <h2>Hello</h2>
                         <h1>Sono Daniele Lorenzo Giacomazzi</h1>
                         <p>A passionate web developer!</p>
                         
-                        <Link to="/projects" class="view-work-button">View My Work</Link>
+                        <Link to="/projects" className="view-work-button">View My Work</Link>
                     </div>
                 </div>
             </div>

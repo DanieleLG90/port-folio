@@ -6,6 +6,7 @@ import SecondProject from './projects-components/SecondProject';
 import "./Projects.css"
 
 import { mainProjectsData } from './projects-components/projects-data/main-projects-data';
+import { secondProjectsData } from './projects-components/projects-data/second-projects-data';
 
 export default function Projects(){
     return(

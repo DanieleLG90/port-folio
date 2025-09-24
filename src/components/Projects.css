@@ -18,6 +18,11 @@
     justify-content: space-between;
 }
 
+.secondary-projects-container{
+    justify-content: center;
+    gap: 20px;
+}
+
 .main-project-card{
     min-height: 400px;
     width: 24%;

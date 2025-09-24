@@ -24,8 +24,6 @@ export default function Projects(){
                 <SecondProject />
                 <SecondProject />
                 <SecondProject />
-                <SecondProject />
-                <SecondProject />
             </div>
             
         </div>

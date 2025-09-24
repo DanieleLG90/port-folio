@@ -23,13 +23,13 @@ export default function ContactInfo(){
                                 </div>
                                 <div className="contact-item">
                                     <FaLinkedin className="contact-icon" />
-                                    <a href="https://www.linkedin.com/in/[tuo-profilo]" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.linkedin.com/in/daniele-lorenzo-giacomazzi/" target="_blank" rel="noopener noreferrer">
                                         LinkedIn Profile
                                     </a>
                                 </div>
                                 <div className="contact-item">
                                     <FaGithub className="contact-icon" />
-                                    <a href="https://github.com/[tuo-profilo]" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://github.com/DanieleLG90" target="_blank" rel="noopener noreferrer">
                                         GitHub Profile
                                     </a>
                                 </div>

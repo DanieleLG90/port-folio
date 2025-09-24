@@ -8,10 +8,10 @@ export default function Footer(){
         <footer>
             <div className='footer-body'>
                 <div className='social-links'>
-                    <a href="https://www.linkedin.com/in/[tuo-profilo]" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/daniele-lorenzo-giacomazzi/" target="_blank" rel="noopener noreferrer">
                         <FaLinkedin className="social-icon" />
                     </a>
-                    <a href="https://github.com/[tuo-profilo]" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/DanieleLG90" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="social-icon" />
                     </a>
                     <Link to="/contact">

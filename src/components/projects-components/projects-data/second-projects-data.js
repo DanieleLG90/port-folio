@@ -1,6 +1,6 @@
-import unitConverter from "../../img/projects-img/unit-converter.png"
-import colorSchemeGenerator from "../../img/projects-img/color-scheme-generator.png"
-import passwordGenerator from "../../img/projects-img/password-generator.png"
+import unitConverter from "../../../img/projects-img/unit-converter.png"
+import colorSchemeGenerator from "../../../img/projects-img/color-scheme-generator.png"
+import passwordGenerator from "../../../img/projects-img/password-generator.png"
 
 
 

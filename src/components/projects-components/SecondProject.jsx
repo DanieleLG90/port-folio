@@ -2,14 +2,17 @@ import React from "react"
 import "./SecondProject.css"
 import { FaGithub, FaLink } from 'react-icons/fa'
 
-import unitConverter from "../../img/projects-img/unit-converter.png"
+//import unitConverter from "../../img/projects-img/unit-converter.png"
 
-export default function SecondProject(){
+export default function SecondProject({project}){
+
+    const { title, siteLink, githubLink, image } = project;
+
     return (
-        <div className="second-project-card" style={{ backgroundImage: `url(${unitConverter})` }}>
+        <div className="second-project-card" style={{ backgroundImage: `url(${image})` }}>
 
             <div className="second-project-title-container">
-                <h4>Titolo Projects</h4>
+                <h4>{title}</h4>
             </div>
 
             <div className="second-project-links-container">

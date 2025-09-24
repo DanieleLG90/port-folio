@@ -22,9 +22,13 @@ export default function Projects(){
             </div>
 
             <div className='secondary-projects-container'>
-                <SecondProject />
-                <SecondProject />
-                <SecondProject />
+                {secondProjectsData.map(project =>(
+                    <SecondProject
+                        key={project.id}
+                        project={project}
+                    />
+                ))}
+                
             </div>
             
         </div>

@@ -5,15 +5,19 @@ import MainProject from './projects-components/MainProject';
 import SecondProject from './projects-components/SecondProject';
 import "./Projects.css"
 
+import { mainProjectsData } from './projects-components/projects-data/main-projects-data';
+
 export default function Projects(){
     return(
         <div className='projects-container'>
             
             <div className='main-projects-container'>
-                <MainProject />
-                <MainProject />
-                <MainProject />
-                <MainProject />
+                {mainProjectsData.map(project => (
+                    <MainProject 
+                        key={project.id} 
+                        project={project} 
+                    />
+                ))}
             </div>
 
             <div className='secondary-projects-container'>

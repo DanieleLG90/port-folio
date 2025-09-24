@@ -12,24 +12,27 @@ const techIconMap = {
     api: FaServer
 };
 
-export default function MainProject(){
+export default function MainProject({project}){
+
+    const { title, siteLink, githubLink, technologies, image } = project;
+
     return (
         <div className="main-project-card">
 
             <div className="main-project-img-container">
-                <img src={plantJournalImg} alt="Anteprima del progetto" />
+                <img src={image} alt="Anteprima del progetto" />
             </div>
 
             <div className="main-project-info-container">
-                <h4>Plants Blog</h4>
+                <h4>{title}</h4>
 
                 <div className="main-project-link">
 
-                    <a href="https://www.tuosito.com/plants-blog" target="_blank" rel="noopener noreferrer">
+                    <a href={siteLink} target="_blank" rel="noopener noreferrer">
                         <FaLink className="link-icon" />
                         <span>View Site</span>
                     </a>
-                    <a href="https://github.com/tuo-profilo/plants-blog" target="_blank" rel="noopener noreferrer">
+                    <a href={githubLink} target="_blank" rel="noopener noreferrer">
                         <FaGithub className="link-icon" />
                         <span>GitHub</span>
                     </a>
@@ -37,9 +40,12 @@ export default function MainProject(){
                 </div>
 
                 <div className="main-project-software">
-                    <FaHtml5 className="software-icon html-icon" />
-                    <FaCss3Alt className="software-icon css-icon" />
-                    <FaJs className="software-icon js-icon" />
+                    {technologies.map((tech, index) => {
+                        const IconComponent = techIconMap[tech.toLowerCase()];
+                        return IconComponent ? (
+                            <IconComponent key={index} className="software-icon" />
+                        ) : null;
+                    })}
                 </div>
 
             </div>

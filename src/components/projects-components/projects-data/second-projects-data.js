@@ -8,22 +8,22 @@ export const secondProjectsData = [
     {
         id: "unitConverter-01",
         title: "Unit Converter",
-        siteLink: "https://www.tuo-sito.com/landing",
-        githubLink: "https://github.com/tuo-profilo/landing-page",
+        siteLink: "https://unitconverter-danieleg.netlify.app/",
+        githubLink: "https://github.com/DanieleLG90/Unit-Converter",
         image: unitConverter
     },
     {
         id: "passwordGenerator-02",
         title: "Password Generator",
-        siteLink: "https://www.tuo-sito.com/landing",
-        githubLink: "https://github.com/tuo-profilo/landing-page",
+        siteLink: "https://passwordgenerator-danieleg.netlify.app/",
+        githubLink: "https://github.com/DanieleLG90/Password-Generator",
         image: passwordGenerator
     },
     {
         id: "colorSheme-03",
         title: "Color Scheme Generator",
-        siteLink: "https://www.tuo-sito.com/landing",
-        githubLink: "https://github.com/tuo-profilo/landing-page",
+        siteLink: "https://color-scheme-generator-2.netlify.app/",
+        githubLink: "https://github.com/DanieleLG90/Color-Scheme-Generator",
         image: colorSchemeGenerator
     },
 ]

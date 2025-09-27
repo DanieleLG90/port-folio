@@ -5,7 +5,7 @@
 }
   
 :root {
-  --primary-color: #ffc800; /* Giallo principale */
+  --primary-color: #FFC107; /* Giallo principale */
   --secondary-color: #1a1a1a; /* Nero per sfondo e testo */
   --text-color: #ffffff; /* Bianco per il testo sulle sezioni nere */
   --button-color: #1a1a1a;

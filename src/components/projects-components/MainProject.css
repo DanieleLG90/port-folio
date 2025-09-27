@@ -1,5 +1,5 @@
 .main-project-card{
-     overflow: hidden;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -61,20 +61,17 @@
     background-color: #ffd74a;
 }
 
-/* Stile per le sole icone all'interno dei link */
 .main-project-link .link-icon {
     font-size: 1.2rem;
     color: var(--secondary-color);
 }
 
-/* Stile del contenitore per le icone dei software */
 .main-project-software {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-/* Stile per le icone dei software */
 .software-icon {
     font-size: 2.5rem;
     color: var(--text-color);
@@ -83,4 +80,14 @@
 
 .software-icon:hover {
     color: var(--primary-color);
+}
+
+@media (max-width: 1500px){
+    .main-project-img-container{
+        height: 245px;
+    }
+
+    .main-project-info-container{
+        padding: 1rem;
+    }
 }

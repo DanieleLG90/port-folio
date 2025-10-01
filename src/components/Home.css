@@ -8,11 +8,11 @@
 .card {
   background-color: var(--secondary-color);
   color: var(--text-color);
-  width: 80%; /* Puoi regolare la larghezza */
-  max-width: 900px; /* Per evitare che la card diventi troppo grande su schermi ampi */
+  width: 80%; 
+  max-width: 900px;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  padding: 2rem; /* Aggiunge spazio interno */
+  padding: 2rem; 
  
 }
 
@@ -20,13 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  text-align: left;
-}
-
-.card-body {
-  display: flex;
-  align-items: center;
   gap: 3rem;
   text-align: left;
 }
@@ -83,4 +76,31 @@
 
 .view-work-button:hover {
   background-color: #ffd74a;
+}
+
+@media (max-width: 768px){
+
+  .card{
+    width: 90%;
+    padding: 1rem ;
+  }
+
+  .card-body{
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    
+  }
+
+  .intro-text{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .view-work-button{
+    width: 65%;
+  }
+
+
 }

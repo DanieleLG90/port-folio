@@ -12,8 +12,8 @@ export default function Home(){
                         <img src={photoProfile} alt="Foto del developer" />
                     </div>
                     <div className="intro-text">
-                        <h2>Hello</h2>
-                        <h1>Sono Daniele Lorenzo Giacomazzi</h1>
+                        <h2>Hello, I'm</h2>
+                        <h1>Daniele Lorenzo Giacomazzi</h1>
                         <p>A passionate web developer!</p>
                         
                         <Link to="/projects" className="view-work-button">View My Work</Link>

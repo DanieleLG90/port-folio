@@ -1,5 +1,3 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import MainProject from './projects-components/MainProject';
 import SecondProject from './projects-components/SecondProject';
@@ -13,12 +11,13 @@ export default function Projects(){
         <div className='projects-container'>
             
             <div className='main-projects-container'>
-                {mainProjectsData.map(project => (
-                    <MainProject 
-                        key={project.id} 
-                        project={project} 
-                    />
-                ))}
+                
+                    {mainProjectsData.map(project => (
+                            <MainProject 
+                                key={project.id} 
+                                project={project} 
+                            />
+                    ))}
             </div>
 
             <div className='secondary-projects-container'>

@@ -1,7 +1,5 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom';
 
-import ContactInfo from "./contact-components/contactInfo"
+import ContactInfo from "./contact-components/ContactInfo"
 import ContactForm from "./contact-components/contactForm"
 
 import './contact.css'

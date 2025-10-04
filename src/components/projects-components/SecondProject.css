@@ -72,3 +72,38 @@
     opacity: 1;
     visibility: visible;
 }
+
+
+@media (max-width: 768px) {
+    .second-project-links-container{
+        opacity: 0;
+        transition: opacity 0s ease, visibility 0s ease; 
+        visibility: hidden;
+        z-index: 2;
+        pointer-events: none; 
+    }
+    
+    .second-project-links-container.visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto; 
+    }
+
+    .second-project-title-container.hidden {
+        opacity: 0;
+    }
+
+    .second-project-card.active .second-project-links-container {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .second-project-card.active .second-project-title-container {
+        opacity: 0;
+    }
+
+    .second-project-card:hover {
+        transform: none !important; 
+    }
+    
+}

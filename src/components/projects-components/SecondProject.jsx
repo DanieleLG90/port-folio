@@ -2,20 +2,36 @@ import React from "react"
 import "./SecondProject.css"
 import { FaGithub, FaLink } from 'react-icons/fa'
 
-//import unitConverter from "../../img/projects-img/unit-converter.png"
+import { useMediaQuery } from 'react-responsive'
+const mobileBreackPoint = 768
 
-export default function SecondProject({project}){
 
+export default function SecondProject({project, onToggleClick, isOpen}){
+
+    const isMobile = useMediaQuery({ maxWidth: mobileBreackPoint })
     const { title, siteLink, githubLink, image } = project;
 
-    return (
-        <div className="second-project-card" style={{ backgroundImage: `url(${image})` }}>
+    const handleClick = () => {
+        if (isMobile) { 
+            onToggleClick(project.id)
+        }
+    }
 
-            <div className="second-project-title-container">
+    const clickHandler = isMobile ? handleClick : null;
+    const secondCardClasses = `second-project-card ${isOpen ? 'active' : ''}`
+
+    return (
+        <div 
+            className= {secondCardClasses}
+            style={{ backgroundImage: `url(${image})` }}
+            onClick={clickHandler}
+        >
+
+            <div className={`second-project-title-container ${isMobile && isOpen ? 'hidden' : ''}`}>
                 <h4>{title}</h4>
             </div>
 
-            <div className="second-project-links-container">
+            <div className={`second-project-links-container ${isMobile && isOpen ? 'visible' : ''}`}>
                 <a href={siteLink} target="_blank" rel="noopener noreferrer">
                     <FaLink className="link-icon" />
                     <span>View Site</span>

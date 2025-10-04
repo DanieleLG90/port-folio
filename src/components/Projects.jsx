@@ -1,4 +1,4 @@
-
+import React from 'react'
 import MainProject from './projects-components/MainProject';
 import SecondProject from './projects-components/SecondProject';
 import "./Projects.css"
@@ -7,6 +7,14 @@ import { mainProjectsData } from './projects-components/projects-data/main-proje
 import { secondProjectsData } from './projects-components/projects-data/second-projects-data';
 
 export default function Projects(){
+
+    // per gestire il click su progetti secondari solo nella visualizzazione da mobile
+    const [openProjectId, setOpenProjectId] = React.useState(null)
+
+    const handleProjectClick = (projectId) => {
+        setOpenProjectId(projectId === openProjectId ? null : projectId);
+    }
+    //
     return(
         <div className='projects-container'>
             
@@ -25,6 +33,8 @@ export default function Projects(){
                     <SecondProject
                         key={project.id}
                         project={project}
+                        onToggleClick={handleProjectClick}
+                        isOpen={project.id === openProjectId}
                     />
                 ))}
                 

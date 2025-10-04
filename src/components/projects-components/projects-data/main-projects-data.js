@@ -1,7 +1,7 @@
 import plantJournalImg from "../../../img/projects-img/plant-journal.PNG"
-import orderingAppImg from "../../../img/projects-img/ordering-app.png"
-import quizQuizImg from "../../../img/projects-img/quiz-quiz.png"
-import movieListImg from "../../../img/projects-img/watchmovie-list.png"
+import orderingAppImg from "../../../img/projects-img/ordering-app.PNG"
+import quizQuizImg from "../../../img/projects-img/quiz-quiz.PNG"
+import movieListImg from "../../../img/projects-img/watchmovie-list.PNG"
 
 
 export const mainProjectsData = [

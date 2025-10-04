@@ -57,6 +57,10 @@
         padding: 0 0,5rem;
     }
 
+    .main-project-card{
+        width: 24%;
+    }
+
     .second-project-card{
         width: 22%;
     }

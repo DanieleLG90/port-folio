@@ -20,15 +20,17 @@ export default function Projects(){
             
             <div className='main-projects-container'>
                 
-                    {mainProjectsData.map(project => (
-                            <MainProject 
-                                key={project.id} 
-                                project={project} 
-                            />
-                    ))}
+                {mainProjectsData.map(project => (
+                        <MainProject 
+                            key={project.id} 
+                            project={project} 
+                        />
+                ))}
+
             </div>
 
             <div className='secondary-projects-container'>
+
                 {secondProjectsData.map(project =>(
                     <SecondProject
                         key={project.id}

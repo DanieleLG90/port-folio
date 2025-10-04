@@ -42,7 +42,6 @@
 
 }
 
-
 .second-project-card{
     min-height: 200px;
     width: 18%;
@@ -63,7 +62,9 @@
 }
 
 @media (max-width: 768px){
-
+    /*aggiunto le specifiche della card qui per evitare che andasse in conflitto, lasciandole nella 
+    pagina dedica alla card nello specifio non veniva eseguita correttamente, probabilmente dovuto a
+    ordine di caricamento?*/
     .main-project-card {
         width: 95%; 
         flex-shrink: 0;

@@ -57,16 +57,24 @@
         width: 98%;
     }
 
-    .main-project-card{
-        width: 24%;
-    }
-
     .second-project-card{
         width: 22%;
     }
 }
 
 @media (max-width: 768px){
+
+    .main-project-card {
+        width: 95%; 
+        flex-shrink: 0;
+        transform: none;  
+        
+        /* Definisce il punto di aggancio */
+        scroll-snap-align: start; 
+        
+        /* Aggiunge spazio tra le slide */
+        margin-right: 1.5rem; 
+    }
 
     .main-projects-container {
         display: flex;

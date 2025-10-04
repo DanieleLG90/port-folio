@@ -54,7 +54,7 @@
 @media (max-width: 1500px){
     .main-projects-container{
         width: 98%;
-        
+        background-color: blue;
     }
 
     .main-project-card{

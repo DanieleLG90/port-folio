@@ -98,18 +98,6 @@
 
 @media (max-width: 768px){
 
-    .main-project-card {
-        width: 95%; 
-        flex-shrink: 0;
-        transform: none;  
-        
-        /* Definisce il punto di aggancio */
-        scroll-snap-align: start; 
-        
-        /* Aggiunge spazio tra le slide */
-        margin-right: 1.5rem; 
-    }
-    
     /* Rimuovi il margine a destra dell'ultima card */
     .main-project-card:last-child {
         margin-right: 0;

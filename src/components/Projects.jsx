@@ -12,9 +12,13 @@ export default function Projects(){
     const [openProjectId, setOpenProjectId] = React.useState(null)
 
     const handleProjectClick = (projectId) => {
-        setOpenProjectId(projectId === openProjectId ? null : projectId);
+
+        const clickedId = String(projectId); 
+        const currentOpenId = String(openProjectId);
+        
+        setOpenProjectId(clickedId === currentOpenId ? null : clickedId);
     }
-    //
+    
     return(
         <div className='projects-container'>
             

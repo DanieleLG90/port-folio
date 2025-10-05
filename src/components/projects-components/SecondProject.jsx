@@ -14,11 +14,33 @@ export default function SecondProject({project, onToggleClick, isOpen}){
     const handleClick = () => {
         if (isMobile) { 
             onToggleClick(project.id)
+            console.log("clicked")
+            console.log(project.id)
         }
     }
 
     const clickHandler = isMobile ? handleClick : null;
-    const secondCardClasses = `second-project-card ${isOpen ? 'active' : ''}`
+    const secondCardClasses = 'second-project-card'
+
+    const titleContent = (
+        <div className='second-project-title-container'>
+                <h4>{title}</h4>
+            </div>
+    )
+
+    const linksContent = (
+        <div className='second-project-links-container'>
+
+                <a href={siteLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    <FaLink className="link-icon" />
+                    <span>View Site</span>
+                </a>
+                <a href={githubLink} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+                    <FaGithub className="link-icon" />
+                    <span>GitHub</span>
+                </a>
+        </div>
+    )
 
     return (
         <div 
@@ -26,21 +48,15 @@ export default function SecondProject({project, onToggleClick, isOpen}){
             style={{ backgroundImage: `url(${image})` }}
             onClick={clickHandler}
         >
-
-            <div className={`second-project-title-container ${isMobile && isOpen ? 'hidden' : ''}`}>
-                <h4>{title}</h4>
-            </div>
-
-            <div className={`second-project-links-container ${isMobile && isOpen ? 'visible' : ''}`}>
-                <a href={siteLink} target="_blank" rel="noopener noreferrer">
-                    <FaLink className="link-icon" />
-                    <span>View Site</span>
-                </a>
-                <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                    <FaGithub className="link-icon" />
-                    <span>GitHub</span>
-                </a>
-            </div>
+            {isMobile ? 
+                (isOpen ? linksContent : titleContent)
+                :
+                <>
+                    {titleContent}
+                    {linksContent}
+                </>
+            }
+            
 
         </div>
     )

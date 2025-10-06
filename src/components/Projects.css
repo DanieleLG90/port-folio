@@ -62,6 +62,57 @@
 }
 
 @media (max-width: 768px){
+
+    /*Stili css per il titolo e freccia sopra i main projects, per rendere più visibile e chiaro che è necessario
+    scorrere per vederne altri*/
+    /* --- Stili per l'Intestazione Generale --- */
+
+.main-projects-header {
+    /* Rendi l'intestazione flessibile per allineare titolo e freccia */
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    margin: 0;
+}
+
+.main-projects-header h2 {
+    font-size: 2rem; /* Dimensione del titolo */
+    color: var(--secondary-color); /* O il colore del tuo testo */
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+.scroll-hint {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 1rem;
+}
+
+.scroll-arrow {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    /* Avvia l'animazione */
+    animation: bounceRight 1.5s infinite; 
+}
+
+/* --- Definizione dell'Animazione --- */
+
+    @keyframes bounceRight {
+        0%, 20%, 50%, 80%, 100% {
+            /* Spostamento verso destra */
+            transform: translateX(0);
+        }
+        40% {
+            /* Spostamento intermedio per l'effetto "rimbalzo" */
+            transform: translateX(5px);
+        }
+        60% {
+            transform: translateX(3px);
+        }
+    }
     /*aggiunto le specifiche della card qui per evitare che andasse in conflitto, lasciandole nella 
     pagina dedica alla card nello specifio non veniva eseguita correttamente, probabilmente dovuto a
     ordine di caricamento?*/

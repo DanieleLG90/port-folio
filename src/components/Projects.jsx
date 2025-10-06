@@ -1,7 +1,11 @@
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa';
+import { useMediaQuery } from 'react-responsive';
 import MainProject from './projects-components/MainProject';
 import SecondProject from './projects-components/SecondProject';
 import "./Projects.css"
+
+const mobileBreakPoint = 768
 
 import { mainProjectsData } from './projects-components/projects-data/main-projects-data';
 import { secondProjectsData } from './projects-components/projects-data/second-projects-data';
@@ -10,6 +14,7 @@ export default function Projects(){
 
     // per gestire il click su progetti secondari solo nella visualizzazione da mobile
     const [openProjectId, setOpenProjectId] = React.useState(null)
+    const isMobile = useMediaQuery({ maxWidth: mobileBreakPoint })
 
     const handleProjectClick = (projectId) => {
 
@@ -21,6 +26,16 @@ export default function Projects(){
     
     return(
         <div className='projects-container'>
+
+            {isMobile && (
+                <div className="main-projects-header">
+                    <h2>Main Projects</h2>
+                    <div className="scroll-hint">
+                        <span>Scroll for more</span>
+                        <FaArrowRight className="scroll-arrow" />
+                    </div>
+                </div>
+            )}
             
             <div className='main-projects-container'>
                 

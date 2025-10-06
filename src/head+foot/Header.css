@@ -48,3 +48,9 @@
     color: var(--button-color);
     background-color: var(--primary-color);
 }
+
+@media (max-width: 768px){
+    .header-links a{
+        letter-spacing: -2px;
+    }
+}

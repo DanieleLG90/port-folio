@@ -99,6 +99,11 @@
     align-items: center;
   }
 
+  .intro-text h1{
+    letter-spacing: -4px;
+    word-spacing: -10px;
+  }
+
   .view-work-button{
     width: 65%;
   }

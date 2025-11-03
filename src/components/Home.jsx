@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./Home.css"
-import photoProfile from "../img/temp-profile-img.png"
+import photoProfile from "../img/foto-profilo-2.png"
 
 export default function Home(){
     return(

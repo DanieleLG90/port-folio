@@ -10,6 +10,7 @@ export default function Layout() {
         <>
             <Header />
                 <main>
+                    <div className='dot-pattern-fixed-overlay'></div>
                     <Outlet />
                 </main>
             <Footer />

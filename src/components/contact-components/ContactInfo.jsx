@@ -37,7 +37,7 @@ export default function ContactInfo(){
                                 </div>
                                 <div className="contact-item">
                                     <FaFilePdf className="contact-icon" /> 
-                                    <a onClick={() => window.open(CV_URL, '_blank')}>
+                                    <a href="/Daniele_Giacomazzi_Resume.pdf" target="_blank" rel="noopener noreferrer">
                                         Download CV (PDF)
                                     </a>
                                 </div>

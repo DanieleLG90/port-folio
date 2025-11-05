@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaFilePdf } from 'react-icons/fa';
 import '../contact.css';
 
 export default function ContactInfo(){
@@ -33,8 +33,13 @@ export default function ContactInfo(){
                                         GitHub Profile
                                     </a>
                                 </div>
+                                <div className="contact-item">
+                                    <FaFilePdf className="contact-icon" /> 
+                                    <a href="/Daniele Giacomazzi Resume.pdf" target="_blank" rel="noopener noreferrer">
+                                        Download CV (PDF)
+                                    </a>
+                                </div>
                             </div>
-                        
                     </div>
     )
 }

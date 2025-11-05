@@ -37,13 +37,9 @@ export default function ContactInfo(){
                                 </div>
                                 <div className="contact-item">
                                     <FaFilePdf className="contact-icon" /> 
-                                    <a href="#" onClick={(e) => {
-                                                            e.preventDefault();
-                                                            window.open(CV_URL, '_blank');
-                                                        }} 
-                                    >
+                                    <span onClick={() => { window.open(CV_URL, '_blank');}}>
                                         Download CV (PDF)
-                                    </a>
+                                    </span>
                                 </div>
                             </div>
                     </div>

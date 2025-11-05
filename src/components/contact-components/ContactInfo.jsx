@@ -3,6 +3,8 @@ import React from 'react'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaFilePdf } from 'react-icons/fa';
 import '../contact.css';
 
+const CV_URL = '/Daniele Giacomazzi Resume.pdf'
+
 export default function ContactInfo(){
     return(
         <div className='contact-info-card'>
@@ -35,7 +37,7 @@ export default function ContactInfo(){
                                 </div>
                                 <div className="contact-item">
                                     <FaFilePdf className="contact-icon" /> 
-                                    <a href="" target="_blank" rel="noopener noreferrer" download="/Daniele Giacomazzi Resume.pdf">
+                                    <a onClick={() => window.open(CV_URL, '_blank')}>
                                         Download CV (PDF)
                                     </a>
                                 </div>

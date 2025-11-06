@@ -68,7 +68,6 @@
 
 
     .main-projects-header {
-        /* Rendi l'intestazione flessibile per allineare titolo e freccia */
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -114,7 +113,7 @@
         }
     }
     /*aggiunto le specifiche della card qui per evitare che andasse in conflitto, lasciandole nella 
-    pagina dedica alla card nello specifio non veniva eseguita correttamente, probabilmente dovuto a
+    pagina dedicata alla card nello specifio non veniva eseguita correttamente, probabilmente dovuto a
     ordine di caricamento?*/
     .main-project-card {
         width: 95%; 
@@ -133,22 +132,21 @@
         flex-direction: row; 
         flex-wrap: nowrap;
         padding: 0; 
-        
         overflow-x: scroll; 
         -webkit-overflow-scrolling: touch; 
-        
         width: 100%; 
         padding: 0 1rem; 
-        
-        /* Regole chiave per l'aggancio */
         scroll-snap-type: x mandatory; 
         scroll-padding-left: 1rem; 
-        
-        /* Nasconde le barre di scorrimento */
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none;
     }
+
     .main-projects-container::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
+        display: none;
+    }
+
+    .second-projects-header h2{
+        margin: 0;
     }
 
     .secondary-projects-container{

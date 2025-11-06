@@ -48,6 +48,12 @@ export default function Projects(){
 
             </div>
 
+            {isMobile && (
+                <div className='second-projects-header'>
+                    <h2>Other Projects</h2>
+                </div>
+            )}
+
             <div className='secondary-projects-container'>
 
                 {secondProjectsData.map(project =>(

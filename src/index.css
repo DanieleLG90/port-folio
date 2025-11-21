@@ -68,3 +68,10 @@ footer{
     background-size: 80px 80px; 
     background-color: transparent; 
 }
+
+@media (max-width: 768px){
+  
+  .main{
+    padding: 0;
+  }
+}
